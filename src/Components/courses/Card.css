@@ -1,0 +1,93 @@
+.card-container{
+    align-items: left;
+width: 300px;
+overflow: hidden;
+margin-left: -10px;
+margin-right: 10px;
+
+
+
+
+}
+.nav{
+    margin-left:-10px;
+    margin-right:-45px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.description{
+    margin-left:28px;
+}
+.descriptionp{
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-left:28px;
+    
+    
+}
+
+.button{
+    background-color: white !important ;
+    width: 120px;
+    height: 40px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+      margin-top : 15px;
+      margin-bottom: 18px;
+      margin-left: 28px;
+      border: 0.25px solid #1c1d1f;
+      border-top: 1.8px solid #1c1d1f;
+      border-bottom: 1px solid #1c1d1f;
+      padding: 5px;
+      cursor: pointer;
+}
+
+.card-title{
+    margin-top: -15px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.rate{
+   
+      display: flex;
+      direction: ltr;
+      flex-direction: row;
+      padding-right: 100px;
+      font-size: smaller;
+      align-items: center;
+      justify-content: space-between;
+      
+  }
+  .number{
+      color:rgb(146, 90, 23);
+      font-weight: bolder;
+  }
+  .instructor{
+       text-align: left;
+       margin-left: 27px;
+      font-weight: light;
+      margin-top: -15px;
+      font-size: 13px;   
+  }
+   
+  .cost{
+    margin-top: -20px;
+    margin-left :18px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    .best{
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        background-color: rgb(218, 225, 134);
+        color: rgb(124, 98, 32);
+        font-weight: bold;
+        text-align: center;
+        width: 120px;
+      }

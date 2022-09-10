@@ -8,6 +8,41 @@
   flex-direction: row;
 }
 
+*{
+ margin-right: 10px;
+ margin-left: 10px;
+}
+.phrase{
+  font-weight:450;
+
+}
+.courses{
+  border: 1px solid;
+
+}
+
+.alarm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.besst{
+  margin-left:-10px;
+  margin-right:-45px;
+  margin-top:-20px;
+}
+
+.textalarm{
+  padding: 25px 40px 25px 25px;
+  font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  font-size: 18;
+  background-color: white;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%), 0 4px 12px rgb(0 0 0 / 7%);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
