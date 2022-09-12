@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Navigate, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Python from './courses/Python';
 import  Excel  from './courses/Excel';
 import  Web  from './courses/Web';
@@ -12,12 +12,24 @@ import 'C:/Users/abdel/my-app/src/App.css';
 import Nav from './Nav';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import Card from './courses/Card'
+
+import { useLocation } from "react-router-dom";
+
 
 
 
 
 
 function Page1 () {
+
+  const location = useLocation();
+  console.log(location.search);
+  console.log(location.search.substring(8,location.search.length))
+  
+
+  
+       
 
     const [courses, setcourses]= useState(null);
     const [spinner, setSpinner] = useState(false); 
@@ -30,16 +42,21 @@ function Page1 () {
       }).then(data=>{
          
           setcourses(data);
+        
           setSpinner(false);
       })
   
   },[]);
     //console.log();
 
-if(spinner)
-    return(<Box sx={{ display: 'flex' }}>
-      <CircularProgress />
-          </Box>)
+    if(spinner)
+    return(<>
+    <h1>Loading...</h1>
+    <Box sx={{ display: 'flex' }}>
+    <CircularProgress />
+  </Box>
+  </>
+  )
 else
   return (
 
@@ -70,6 +87,9 @@ else
     <h4 className="phrase">  choose from 204,000 online video courses with new additions published every month</h4>
     <Navbar />
 
+{
+  location.search == '' ?
+  
    <Routes>
   {courses && <Route path='/' element={<Python
     pythondata={courses[0]}
@@ -123,11 +143,62 @@ courses &&
    />}/>
 }
    
-  
+   </Routes> 
    
+   : 
 
-   
-   </Routes>
+   <div className='cardss' >
+    {
+      console.log(courses)
+    }
+    {
+
+    
+
+   courses && [...Array(courses.length)].map((elementInArray, index) => ( 
+  
+
+  [...Array(courses[index][0].courses.length)].map((elementInArray, i) => ( 
+      courses[index][0].courses[i].title.search(location.search.substring(8,location.search.length))!=-1 ? 
+      
+      <div className='cards'>
+      <Card
+      cardobject={courses[index][0].courses[i]}
+      idd={courses[index][0].courses[i].id}
+      />
+      </div> : ''
+
+   ))
+   ))
+  }
+  </div> 
+ 
+    
+}
+
+<section>
+                <div class="top">
+
+                
+                <h2 class="topptext">Top catagories</h2>
+
+                <div class="container text-center">
+                    <div style={{display:"flex" , flexDirection:"row"}}>
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"/><h5 class="toptext">Design</h5></div>
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"/><h5 class="toptext">Development</h5></div>
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"/><h5 class="toptext">Marketing</h5></div>
+                      <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"/><h5 class="toptext">IT and Software</h5></div>
+                    </div>
+                    <div style={{display:"flex" , flexDirection:"row"}}>
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"/><h5 class="toptext">Personal Development</h5></div>
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"/><h5 class="toptext">Business</h5></div>
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"/><h5 class="toptext">Photography</h5></div>
+                        <div class="col-lg"><img src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"/><h5 class="toptext">Music</h5></div>
+                    </div>
+                  </div>
+
+                </div>
+            </section>
    
    </>
 

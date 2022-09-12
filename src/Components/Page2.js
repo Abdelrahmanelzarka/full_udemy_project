@@ -12,6 +12,7 @@ import {FaLanguage } from 'react-icons/fa';
 import MediaCard from './MediaCard';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import {useQuery} from "react-query";
 
 
 function Page2 ()  {
@@ -21,7 +22,7 @@ function Page2 ()  {
     const location = useLocation()
   const { myState } = location.state;
   
-  console.log(myState);
+  console.log(location);
   const [course, setcourse]= useState(null);
 
   useEffect(()=>{
@@ -52,16 +53,20 @@ function Page2 ()  {
 
 
 if(spinner)
-  return(<Box sx={{ display: 'flex' }}>
+  return(<>
+  <h1>Loading...</h1>
+  <Box sx={{ display: 'flex' }}>
   <CircularProgress />
-</Box>)
+</Box>
+</>
+)
 else
   return (
     < >
     
     <Nav/>
     
-    <div style={{position:"absolute" , height:'3759px', marginTop:'50px',
+    <div style={{position:"absolute" , height:'3559px', marginTop:'50px',
     left: '1010px'}}>
    <MediaCard course={myState.cardobject} />
     </div>
@@ -162,7 +167,7 @@ else
  
      <div className='blackarea' style={{height:"400px"}} >
         <div style={{marginLeft:"20px", marginTop:"-30px", display:"flex", flexDirection:"row",justifyContent:"space-between", borderBottom:"2px solid #1c1d1f"}}>
-        <h3 style={{display:"flex", flexDirection:"row"}}>Top companies choose <h4 style={{color:"rgb(154, 44, 212)" , marginTop:"1px"}}>Udemy Business</h4> to build in-demand career skills.</h3>
+            <h3 style={{display:"flex", flexDirection:"row"}}>Top companies choose <h4 style={{color:"rgb(154, 44, 212)" , marginTop:"1px"}}>Udemy Business</h4> to build in-demand career skills.</h3>
         <div style={{marginTop:"15px"}}>
         <img src='https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg'/>
         <img src='https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg'/>
@@ -196,9 +201,9 @@ else
 
             
     </div>
-    <button style={{border:"2px solid white",padding:"10px 38px 2px 2px", backgroundColor:"inherit", color:"white",position:"absolute",top:"4050px",  left:"1400px",display:"flex", flexDirection:"row" }}><MdLanguage/> <p style={{marginTop:"0px"}}>English</p></button>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" width="99" height="34" style={{marginLeft:"40px",marginTop:"20px",filter:"invert(100%)"}}/>
-    <p style={{position:"absolute",top:"4300px",  left:"1400px"}}>© 2022 Udemy, Inc.</p>
+    <button style={{border:"2px solid white",padding:"10px 38px 2px 2px", backgroundColor:"inherit", color:"white",marginLeft:"1350px", marginTop:"-180px",display:"flex", flexDirection:"row" }}><MdLanguage/> <p style={{marginTop:"0px"}}>English</p></button>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" width="99" height="34" style={{marginLeft:"40px",marginTop:"170px",filter:"invert(100%)"}}/>
+    <p style={{ marginLeft:"1350px", marginTop:"-10px"}}>© 2022 Udemy, Inc.</p>
     </div>
     
 

@@ -1,7 +1,11 @@
-import React from 'react'
+
 import './Nav.css'
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom'
 
 function Nav  ()  {
+    const [search, setSearch] = useState(""); 
+
   return (
     
     <nav className="flex-container">
@@ -16,13 +20,16 @@ function Nav  ()  {
             </a>
 
             
-                <a href="/teaching/?ref=teach_header" className="searchimg">
+            <NavLink to={`Page1/?search=${search}`}>
+                <a className="searchimg">
                 <button type="submit" id="buttonsearch"/>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg" alt="serch" width="24" height="24"/>
-                </a>
+               </a>
+                </NavLink>
+                
            
 
-            <input id="searchbar" type="text" placeholder="Search for anything" value="" role="combobox" className="search"/>
+            <input id="searchbar" type="text" placeholder="Search for anything" value={search} role="combobox" className="search" onChange={(e)=>{setSearch(e.target.value); console.log(search)}}/>
 
             <div className="upsidebar">
                 <a href="/teaching/?ref=teach_header">

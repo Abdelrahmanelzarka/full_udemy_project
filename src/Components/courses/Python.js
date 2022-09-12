@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 import Block from './Block'
 import Best from'./Best'
-
+import Carousel from 'react-bootstrap/Carousel';
 import 'C:/Users/abdel/my-app/src/App.css';
 
 
@@ -22,12 +22,19 @@ function Python (pythondata) {
      button={pythondata.pythondata[0].button}
      />
 
+  <Carousel>
+  <Carousel.Item>
+  <img
+      className="d-block w-100"
+      src="holder.js/800x400?text=Third slide&bg=20232a"
+      alt="Third slide"
+    />
       <div className='cards'>
      <Card
      cardobject={pythondata.pythondata[0].courses[0]}
      idd={pythondata.pythondata[0].courses[0].id}
      />
-     <div class="besst">
+     <div className="besst">
      <Card
      cardobject={pythondata.pythondata[0].courses[1]}
      idd={pythondata.pythondata[0].courses[1].id}
@@ -47,6 +54,13 @@ function Python (pythondata) {
      idd={pythondata.pythondata[0].courses[4].id}
      />
      </div>
+    
+     </Carousel.Item>
+     
+
+
+     
+     </Carousel>
     
 
     </div>

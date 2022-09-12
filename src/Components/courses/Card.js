@@ -7,7 +7,7 @@ function Card({cardobject,idd}) {
 
 
 
-     console.log(idd);
+     //console.log(idd);
   return (
     <NavLink key={"Page2"}
     to="/Page2"
