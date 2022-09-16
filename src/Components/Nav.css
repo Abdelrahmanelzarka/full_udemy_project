@@ -1,0 +1,101 @@
+
+
+  .login{
+    
+    margin: -2px;
+    background-color: transparent;
+    border: 1px solid #1c1d1f;
+    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -.02rem;
+      font-size: .9rem;
+    padding: 5px;
+    width: 70px;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .login span{
+    color: black !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+  }
+  .signup{
+    margin: -2px;
+    background-color: #1c1d1f;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -.02rem;
+      font-size: .9rem;
+    padding: 5px;
+    width: 80px;
+    height: 2.4rem;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .earth{
+   margin: -2px;
+    background-color: transparent;
+    padding: 7px 0px 6px 0px;
+    border: 1px solid #1c1d1f;
+    align-items: center;
+  }
+    
+    
+  .searchimg{
+   
+      width: 33px;
+      height: 33px;
+      top: 25px;
+      left: 270px;
+      position:absolute;
+  }
+  #buttonsearch{
+    display:none;
+  }
+  .search{
+    
+      height: 3px;
+      width: 526px;
+      border: 1px solid #1c1d1f;
+      border-radius: 100px;
+      text-align: left;
+      padding: 22px 22px 22px 34px;
+      background-color: #f7f9fa;
+      margin: 0 0rem;
+      display: flex;
+      flex-grow: 1;  
+  }
+  
+  .flex-container{
+    margin-left: -30px;
+    margin-right: -20px;
+      z-index: 99999;
+      padding: 0px 15px 0px 15px;
+      
+      position: relative;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 7%), 0 4px 12px rgb(0 0 0 / 7%);
+      align-items: center;
+      justify-content: space-around;
+      height: 75px;
+      display: flex;
+      font-weight: 400;
+      font-size: 0.8rem;
+  
+  }
+  .flex-container a{
+    margin: -1px;
+    font-weight: 500;
+    font-size: small;
+    color: black;
+  }

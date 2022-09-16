@@ -1,0 +1,151 @@
+
+.blackarea{
+
+    background-color: rgb(20, 21, 23);
+    margin-left: -20px ;
+    width: 1587px;
+    
+    height: 320px;
+    color: white;
+    padding-top:40px;
+
+}
+.firstnav{
+
+    border-bottom: 0.5px solid rgb(214, 219, 227);
+   
+
+}
+.fourwords{
+  
+    color: rgb(69, 72, 78);
+    margin-left: 230px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-right: 590px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.cntercontents{
+    margin-left: 230px;
+    margin-right: 590px;
+
+}
+.cntercontents h1{
+  margin-top:0px;
+  width:800px;
+  font-size: 35px;
+}
+.cntercontents h5{
+ font-weight: lighter;
+  width:700px;
+  font-size: 22px;
+}
+.rrate{
+  
+  margin-top:-40px;
+  margin-bottom:-20px;
+  display: flex;
+  flex-direction:row;
+}
+.stars{
+  filter: invert(91%); 
+}
+
+
+.container{
+   
+    top: 10%;
+    left: 23%;
+    
+  }
+    
+  .text{
+    display: inline;
+    width: 100%;
+  }
+    
+  .read-or-hide{
+    color: rgb(36, 51, 184);
+    cursor: pointer;
+    font-weight:bold;
+  }
+  .wholeReview{
+     
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px solid rgb(159, 164, 172);
+   margin:20px;
+
+
+
+  }
+  .nxtToimg{
+    margin-top:-20px;
+  }
+  .ratte{
+    display:flex;
+    flex-direction:row;
+    color:rgb(60, 62, 74);
+  }
+
+  .box{
+    border: 0.5px solid rgb(115, 119, 125);
+    background-color:rgb(238, 242, 250);
+    margin-top:0.8px;
+   
+
+  }
+  .insidebox{
+    margin-top:5px;
+    background-color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  .insideinsidebox
+  {
+  
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+  }
+  .insideinsidebox p
+  {
+  
+    margin-top:-5px;
+
+  }
+  .helpful {
+    display:flex;
+    flex-direction:row;
+  }
+
+  .helpful p{
+    margin-top:-5px;
+    margin-left: -0.5px;
+  }
+  
+
+  .cardMother
+  {
+    position:absolute;
+    margin-top:50px;
+      left: 1010px;
+   height:3515px;
+  }
+  .card{
+    position: sticky;
+  top:-210px;
+  margin-bottom: 25%;
+
+  }
+
+  .button{
+   background-color:rgb(154, 44, 212);
+   
+  }
