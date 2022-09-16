@@ -1,5 +1,5 @@
 import React from 'react'
-import 'C:/Users/abdel/my-app/src/Components/page2.css';
+import './page2.css';
 import { AiOutlineLike } from "react-icons/ai";
 import { AiOutlineDislike } from "react-icons/ai";
 

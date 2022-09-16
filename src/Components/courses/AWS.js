@@ -3,7 +3,7 @@ import Card from './Card'
 import Block from './Block'
 import Best from'./Best'
 
-import 'C:/Users/abdel/my-app/src/App.css';
+import './appcourses.css';
 
 
 

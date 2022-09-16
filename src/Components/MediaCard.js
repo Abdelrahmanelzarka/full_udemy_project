@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import 'C:/Users/abdel/my-app/src/Components/page2.css';
+import './page2.css';
 import { MdSmartDisplay}from 'react-icons/md';
 import { RiFilePaperLine}from 'react-icons/ri';
 import { BiDownload, BiMobileAlt,BiTrophy,BiPlayCircle}from 'react-icons/bi';

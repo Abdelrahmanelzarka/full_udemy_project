@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import 'C:/Users/abdel/my-app/src/Components/page2.css';
+import './page2.css';
   
 const ReadMore = ({ children }) => {
   const text = children.split('\n').map(str => <p>{str}</p>);

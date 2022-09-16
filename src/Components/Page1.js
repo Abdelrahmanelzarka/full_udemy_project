@@ -8,7 +8,7 @@ import   Data   from './courses/Data';
 import  AWS  from './courses/AWS';
 import  Drawing  from './courses/Drawing';
 import { Navbar } from './Navbar';
-import 'C:/Users/abdel/my-app/src/App.css';
+import './app.css';
 import Nav from './Nav';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';

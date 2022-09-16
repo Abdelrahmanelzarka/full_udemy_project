@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import 'C:/Users/abdel/my-app/src/Components/page2.css';
+import './page2.css';
 import Content from './ReadMore';
 import Review from './Review';
 import Nav from './Nav'

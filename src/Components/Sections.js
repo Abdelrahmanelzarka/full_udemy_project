@@ -1,5 +1,5 @@
 import * as React from 'react';
-import 'C:/Users/abdel/my-app/src/Components/page2.css';
+import './page2.css';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
