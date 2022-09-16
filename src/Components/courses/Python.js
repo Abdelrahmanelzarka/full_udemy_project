@@ -50,31 +50,7 @@ function Python (pythondata) {
      />
      </div>
 
-     <div className='cards'>
-     <Card
-     cardobject={pythondata.pythondata[0].courses[0]}
-     idd={pythondata.pythondata[0].courses[0].id}
-     />
-     <div className="besst">
-     <Card
-     cardobject={pythondata.pythondata[0].courses[1]}
-     idd={pythondata.pythondata[0].courses[1].id}
-     />
-     <Best/>
-     </div>
-     <Card
-     cardobject={pythondata.pythondata[0].courses[2]}
-     idd={pythondata.pythondata[0].courses[2].id}
-     />
-     <Card
-     cardobject={pythondata.pythondata[0].courses[6]}
-     idd={pythondata.pythondata[0].courses[6].id}
-     />
-     <Card
-     cardobject={pythondata.pythondata[0].courses[4]}
-     idd={pythondata.pythondata[0].courses[4].id}
-     />
-     </div>
+  
 
      
     
