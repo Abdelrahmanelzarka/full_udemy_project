@@ -22,13 +22,8 @@ function Python (pythondata) {
      button={pythondata.pythondata[0].button}
      />
 
-  <Carousel>
-  <Carousel.Item>
-  <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
-      alt="Third slide"
-    />
+  
+  
       <div className='cards'>
      <Card
      cardobject={pythondata.pythondata[0].courses[0]}
@@ -55,12 +50,6 @@ function Python (pythondata) {
      />
      </div>
     
-     </Carousel.Item>
-     
-
-
-     
-     </Carousel>
     
 
     </div>

@@ -12,7 +12,6 @@ import {FaLanguage } from 'react-icons/fa';
 import MediaCard from './MediaCard';
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
-import {useQuery} from "react-query";
 
 
 function Page2 ()  {
@@ -62,12 +61,11 @@ if(spinner)
 )
 else
   return (
-    < >
     
+    <body style={{marginBottom:"-20px"}}>
     <Nav/>
     
-    <div style={{position:"absolute" , height:'3559px', marginTop:'50px',
-    left: '1010px'}}>
+    <div className='cardMother'>
    <MediaCard course={myState.cardobject} />
     </div>
     <div className='blackarea'>
@@ -206,8 +204,9 @@ else
     <p style={{ marginLeft:"1350px", marginTop:"-10px"}}>© 2022 Udemy, Inc.</p>
     </div>
     
-
-    </>
+    </body>
+    
+   
   )
 }
 

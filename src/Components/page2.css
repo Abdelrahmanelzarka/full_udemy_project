@@ -129,12 +129,22 @@
     margin-top:-5px;
     margin-left: -0.5px;
   }
+  
+
+  .cardMother
+  {
+    position:absolute;
+    margin-top:50px;
+      left: 1010px;
+   height:3515px;
+  }
   .card{
     position: sticky;
-    
   top:-210px;
+  margin-bottom: 25%;
 
   }
+
   .button{
    background-color:rgb(154, 44, 212);
    

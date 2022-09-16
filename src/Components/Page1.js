@@ -22,14 +22,11 @@ import { useLocation } from "react-router-dom";
 
 
 function Page1 () {
+  let f=1;
 
   const location = useLocation();
   console.log(location.search);
   console.log(location.search.substring(8,location.search.length))
-  
-
-  
-       
 
     const [courses, setcourses]= useState(null);
     const [spinner, setSpinner] = useState(false); 
@@ -42,7 +39,6 @@ function Page1 () {
       }).then(data=>{
          
           setcourses(data);
-        
           setSpinner(false);
       })
   
@@ -161,16 +157,19 @@ courses &&
   [...Array(courses[index][0].courses.length)].map((elementInArray, i) => ( 
       courses[index][0].courses[i].title.search(location.search.substring(8,location.search.length))!=-1 ? 
       
+      
       <div className='cards'>
       <Card
       cardobject={courses[index][0].courses[i]}
       idd={courses[index][0].courses[i].id}
       />
+      {f=''}
       </div> : ''
 
    ))
    ))
   }
+  {f && <h1>No Courses Found</h1>}
   </div> 
  
     
