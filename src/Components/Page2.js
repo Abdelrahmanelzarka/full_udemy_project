@@ -26,7 +26,7 @@ function Page2 ()  {
 
   useEffect(()=>{
     setSpinner(true);
-      fetch(`http://localhost:2000/${myState.cardobject.id}`) 
+      fetch(`https://udemy-66e8c-default-rtdb.firebaseio.com//${myState.cardobject.id}`)
       .then(res2=>{
           return res2.json();
       }).then(data2=>{
@@ -40,7 +40,7 @@ function Page2 ()  {
 
   useEffect(()=>{
     setSpinner(true);
-      fetch(`http://localhost:5000/${myState.cardobject.id}`) 
+      fetch(`https://api.npoint.io/ce37062f59c8fded9ac1/${myState.cardobject.id}`) 
       .then(res2=>{
           return res2.json();
       }).then(data2=>{
