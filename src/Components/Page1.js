@@ -33,7 +33,7 @@ function Page1 () {
 
   useEffect(()=>{
     setSpinner(true);
-      fetch('http://localhost:8000/array')
+      fetch('https://api.npoint.io/eb55692493c96edacac8')
       .then(res=>{
           return res.json();
       }).then(data=>{
@@ -88,13 +88,13 @@ else
   
    <Routes>
   {courses && <Route path='/' element={<Python
-    pythondata={courses[0]}
+    pythondata={courses.array[0]}
   />}/>}
 
   {
     courses &&
   <Route path='Excel' element={<Excel
-  exceldata={courses[1]}
+  exceldata={courses.array[1]}
   />}/>
 }
 {
@@ -102,7 +102,7 @@ else
 courses &&
 
   <Route path='Web' element={<Web
-  webdata={courses[2]}
+  webdata={courses.array[2]}
   />}/>
 }
 {
@@ -110,7 +110,7 @@ courses &&
 courses &&
 
   <Route path='Java' element={<Java
-  javadata={courses[3]}
+  javadata={courses.array[3]}
   />}/>
 
 }
@@ -119,14 +119,14 @@ courses &&
 courses &&
 
    <Route path='Data' element={<Data
-   datadata={courses[4]}
+   datadata={courses.array[4]}
    />}/>
 }
 {
 
 courses &&
    <Route path='AWS' element={<AWS
-   awsdata={courses[5]}
+   awsdata={courses.array[5]}
    
    />}/>
 }
@@ -135,7 +135,7 @@ courses &&
 courses &&
 
    <Route path='Drawing' element={<Drawing
-   drawingdata={courses[6]}
+   drawingdata={courses.array[6]}
    />}/>
 }
    
@@ -154,14 +154,14 @@ courses &&
    courses && [...Array(courses.length)].map((elementInArray, index) => ( 
   
 
-  [...Array(courses[index][0].courses.length)].map((elementInArray, i) => ( 
-      courses[index][0].courses[i].title.search(location.search.substring(8,location.search.length))!=-1 ? 
+  [...Array(courses.array[index][0].courses.length)].map((elementInArray, i) => ( 
+      courses.array[index][0].courses[i].title.search(location.search.substring(8,location.search.length))!=-1 ? 
       
       
       <div className='cards'>
       <Card
-      cardobject={courses[index][0].courses[i]}
-      idd={courses[index][0].courses[i].id}
+      cardobject={courses.array[index][0].courses[i]}
+      idd={courses.array[index][0].courses[i].id}
       />
       {f=''}
       </div> : ''
