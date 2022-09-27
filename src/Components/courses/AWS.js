@@ -30,21 +30,21 @@ function AWS (awsdata) {
      <div class="besst">
      <Card
      cardobject={awsdata.awsdata[0].courses[1]}
-     idd={awsdata.awsdata[0].courses[0].id}
+     idd={awsdata.awsdata[0].courses[1].id}
      />
      <Best/>
      </div>
      <Card
      cardobject={awsdata.awsdata[0].courses[2]}
-     idd={awsdata.awsdata[0].courses[0].id}
+     idd={awsdata.awsdata[0].courses[2].id}
      />
      <Card
      cardobject={awsdata.awsdata[0].courses[3]}
-     idd={awsdata.awsdata[0].courses[0].id}
+     idd={awsdata.awsdata[0].courses[3].id}
      />
      <Card
      cardobject={awsdata.awsdata[0].courses[4]}
-     idd={awsdata.awsdata[0].courses[0].id}
+     idd={awsdata.awsdata[0].courses[4].id}
      />
      </div>
     
