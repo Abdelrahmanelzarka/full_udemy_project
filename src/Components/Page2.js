@@ -15,9 +15,12 @@ import Box from '@mui/material/Box';
 
 
 function Page2 ()  {
+
+ 
    
     
-    const [spinner, setSpinner] = useState(false); 
+    const [spinner1, setSpinner1] = useState(false); 
+    const [spinner2, setSpinner2] = useState(false); 
     const location = useLocation()
   const { myState } = location.state;
   
@@ -25,13 +28,13 @@ function Page2 ()  {
   const [course, setcourse]= useState(null);
 
   useEffect(()=>{
-    setSpinner(true);
-      fetch(`https://udemy-66e8c-default-rtdb.firebaseio.com//${myState.cardobject.id}`)
+    setSpinner1(true);
+      fetch(`https://api.npoint.io/24075e74ed9047d0555a/${myState.cardobject.id}`) 
       .then(res2=>{
           return res2.json();
       }).then(data2=>{
           setcourse(data2);
-          setSpinner(false);
+          setSpinner1(false);
       })
   
   },[]);
@@ -39,19 +42,19 @@ function Page2 ()  {
   const [review, setreview]= useState(null);
 
   useEffect(()=>{
-    setSpinner(true);
+    setSpinner2(true);
       fetch(`https://api.npoint.io/ce37062f59c8fded9ac1/${myState.cardobject.id}`) 
       .then(res2=>{
           return res2.json();
       }).then(data2=>{
           setreview(data2);
-          setSpinner(false);
+          setSpinner2(false);
       })
   
   },[]);
 
 
-if(spinner)
+if(spinner2 || spinner1)
   return(<>
   <h1>Loading...</h1>
   <Box sx={{ display: 'flex' }}>
