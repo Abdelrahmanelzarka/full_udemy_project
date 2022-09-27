@@ -3,27 +3,29 @@
 width: 300px;
 overflow: hidden;
 
-margin: 10px
 
+}
+.nav{
+    margin-left:-10px;
+    margin-right:-59px;
 }
 a{
     text-decoration: none;
     color: black;
 }
 .description{
-    
-    margin-left: 10px;
+    margin-left:28px;
 }
-
 .descriptionp{
     margin-top: -2px;
     margin-bottom: -2px;
-    margin-left: 10px;
+    margin-left:28px;
+    
     
 }
 
 .button{
-    background-color: white;
+    background-color: white !important ;
     width: 120px;
     height: 40px;
       font-size: 14px;
@@ -31,7 +33,7 @@ a{
       font-weight: bold;
       margin-top : 15px;
       margin-bottom: 18px;
-      margin-left: 10px;
+      margin-left: 28px;
       border: 0.25px solid #1c1d1f;
       border-top: 1.8px solid #1c1d1f;
       border-bottom: 1px solid #1c1d1f;
@@ -62,6 +64,7 @@ a{
   }
   .instructor{
        text-align: left;
+       margin-left: 27px;
       font-weight: light;
       margin-top: -15px;
       font-size: 13px;   
@@ -69,6 +72,7 @@ a{
    
   .cost{
     margin-top: -20px;
+    margin-left :18px;
       display: flex;
       justify-content: left;
       align-items: center;
