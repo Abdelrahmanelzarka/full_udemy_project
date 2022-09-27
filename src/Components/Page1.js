@@ -43,7 +43,7 @@ function Page1 () {
       })
   
   },[]);
-    //console.log();
+    console.log(courses + "DDS");
 
     if(spinner)
     return(<>
@@ -151,12 +151,11 @@ courses &&
 
     
 
-   courses && [...Array(courses.length)].map((elementInArray, index) => ( 
+   courses && [...Array(courses.array.length)].map((elementInArray, index) => ( 
   
 
   [...Array(courses.array[index][0].courses.length)].map((elementInArray, i) => ( 
       courses.array[index][0].courses[i].title.search(location.search.substring(8,location.search.length))!=-1 ? 
-      
       
       <div className='cards'>
       <Card
