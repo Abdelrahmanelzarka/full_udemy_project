@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 import Block from './Block'
 import Best from'./Best'
-import Carousel from 'react-bootstrap/Carousel';
+
 import './appcourses.css';
 
 
@@ -50,7 +50,7 @@ function Python (pythondata) {
      />
      </div>
 
-  
+     
 
      
     
