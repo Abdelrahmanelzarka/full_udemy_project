@@ -133,10 +133,11 @@
 
   .cardMother
   {
+    
     position:absolute;
     margin-top:50px;
       left: 1010px;
-   height:2490px;
+   min-height:3300px;
   }
   .card{
     position: sticky;
